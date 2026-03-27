@@ -28,7 +28,10 @@ const SignInScreen = () => {
       />
       <AppText style={styles.appName}>Start E-commerce</AppText>
 
-      <AppButton title="Login" onPress={() => {}} />
+      <AppButton
+        title="Login"
+        onPress={() => navigation.navigate("MainAppBottomTabs" as never)}
+      />
       <AppButton
         title="Sign Up"
         style={styles.regiserButton}
