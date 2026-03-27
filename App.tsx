@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 import AppSafeView from "./src/components/views/AppSafeView";
 import FlashMessage, { showMessage } from "react-native-flash-message";
 
-import AppTextInput from "./src/components/inputs/AppTextInput";
+import SignInScreen from "./src/screens/auth/SignInScreen";
 
 export default function App() {
   const [email, setEmail] = useState("");
@@ -13,12 +13,7 @@ export default function App() {
     <>
       <FlashMessage position={"top"} />
       <AppSafeView style={styles.container}>
-        <AppTextInput
-          value={email}
-          onChangeText={setEmail}
-          placeholder="Enter email"
-          keyboardType="email-address"
-        />
+        <SignInScreen />
       </AppSafeView>
     </>
   );
