@@ -6,8 +6,8 @@ import {
   ViewStyle,
 } from "react-native";
 import React, { FC, ReactNode } from "react";
-import { AppColors } from "../styles/colors";
-import { IS_ANDROID } from "../constants/constants";
+import { AppColors } from "../../styles/colors";
+import { IS_ANDROID } from "../../constants/constants";
 
 interface AppSaveViewProps {
   children: ReactNode;
